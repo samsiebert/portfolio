@@ -146,13 +146,20 @@ header nav ul li a:hover {
 .project-title {
     color: var(--primary-color);
     background-color: var(--secondary-color);
-    font-size: 1.5vw;
+    font-size: 22px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align content: center;
     height: 100px;
     width: 250px;
     padding: 10px;
     text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.project-title h4 { 
+    font-size: 15px; 
+    font-style: italic;
 }
 
 .first-project {
@@ -167,7 +174,18 @@ header nav ul li a:hover {
     background-image: url(../images/horiseon.jpg);
     background-position: center;
     background-size: cover;
+}
 
+.third-project {
+    background-image: url(../images/default-icon.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.fourth-project {
+    background-image: url(../images/default-icon.jpeg);
+    background-position: center;
+    background-size: cover;
 }
 
 
