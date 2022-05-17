@@ -150,7 +150,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align content: center;
+    align-content: center;
     height: 100px;
     width: 250px;
     padding: 10px;
