@@ -1,6 +1,6 @@
 # Portfolio Challenge
 
-![screenshot of portfolio webpage](../assets/images/portfolio-screenshot)
+![screenshot of portfolio webpage](/assets/images/portfolio-screenshot.png)
 
 ## Purpose
 * Second weekly challenge in Washington University's Ful Stack Web Development BootCamp. 
