@@ -282,7 +282,7 @@ header nav ul li a:hover {
         align-content: center;
         padding-top: 30px;
   }
-
+}
     
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
