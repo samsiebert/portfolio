@@ -77,6 +77,7 @@ header nav ul li a {
 header nav ul li a:hover {
     color: var(--secondary-color);
     font-size: 35px;
+    text-shadow: 0 0 7px rgba(252, 208, 161, 0.5);
 }
 
 /* HERO STYLING */
@@ -118,7 +119,7 @@ header nav ul li a:hover {
 /* ABOUT ME STYLING */
 .about-me p {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 15px;
     font-size: 20px;
 }
@@ -150,11 +151,11 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: center;
     height: 100px;
     width: 250px;
     padding: 10px;
     text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
 }
 
 .project-title h4 { 
@@ -165,6 +166,8 @@ header nav ul li a:hover {
 .first-project {
     flex: 3 0 90%;
     background-image: url(../images/run-buddy.jpeg);
+    background-color: #5b8266;
+    background-blend-mode: soft-light;
     background-position: center;
     background-size: cover;
     height: 500px;
@@ -172,25 +175,121 @@ header nav ul li a:hover {
 
 .second-project {
     background-image: url(../images/horiseon.jpg);
+    background-color: #5b8266;
+    background-blend-mode: soft-light;
     background-position: center;
     background-size: cover;
 }
 
 .third-project {
     background-image: url(../images/default-icon.jpeg);
+    background-color: #5b8266;
+    background-blend-mode: soft-light;
     background-position: center;
     background-size: cover;
 }
 
 .fourth-project {
     background-image: url(../images/default-icon.jpeg);
+    background-color: #5b8266;
+    background-blend-mode: soft-light;
     background-position: center;
     background-size: cover;
 }
 
+.project:hover {
+    background-blend-mode: normal; 
+}
+
+.project:hover .project-title {
+    height: 110px;
+    width: 260px;
+    font-size: 23px;
+}
+
+/* CONTACT ME STYLING */
+.contact-links {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: var(--primary-color);
+}
+
+.contact-links a, phone {
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-size: 26px;
+    padding: 10px 20px;
+    border: 5px solid var(--tertiary-color);
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.contact-links a:hover, phone:hover {
+    color: var(--tertiary-color);
+    font-size: 28px;
+} 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
 
+    header h1 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
 
+    header nav {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    header nav ul li a  {
+        font-size: 20px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-content: flex-start;
+    }
 }
+
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+
+    section {
+        padding: 30px 15px;
+        flex-direction: column;
+    }
+
+    .section-title {
+        justify-content: center;
+        padding: 20px;
+        border-right: none;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        flex: none;
+    }
+
+    .contact-links {
+        align-content: center;
+        padding-top: 30px;
+  }
+
+    
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+      .section-title {
+          font-size: 30px;
+      }
+
+      .first-project {
+       height: 200px;
+  }
